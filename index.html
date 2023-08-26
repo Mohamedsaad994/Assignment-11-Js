@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+      <nav class="navbar bg-dark navbar-expand-lg border-bottom border-body py-4" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="imgs/logo.png" alt="">
+              <div class="info d-inline-block ms-3">
+                  <h2 class="h4 m-0">Weather</h2>
+                  <p class="fs-6 m-0 text-white-50">tagline goes here</p>
+              </div>
+          </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+
+      <header>
+        <div class="container pt-5">
+            <div class="form bg-dark py-2 rounded-pill d-flex justify-content-between my-4">
+                <input type="text" class="ms-3 text-white" id="search" placeholder="Find your location...">
+                <button class="btn btn-info rounded-pill">Find</button>
+            </div>
+              <div class="row text-center text-white-50 mt-5 rounded-top-3 overflow-hidden">
+                <div class="item col-md-4 d-flex justify-content-between rowOne-color py-2">
+                  <p id="todayName" class="m-0">Monday</p>
+                  <div>
+                    <span id="todayNum" class="m-0">7</span>
+                    <span id="todayMonth">August</span>
+                  </div>
+                </div>
+                <div class="col-md-4 rowOne-secondColor py-2">
+                  <p class="nxtDay m-0">Tuesday</p>
+                </div>
+                <div class="col-md-4 rowOne-color py-2">
+                  <p class="nxtDay m-0">Wednesday</p>
+                </div>
+              </div>
+
+              <div class="row rounded-bottom-3 overflow-hidden">
+                <div class="col-md-4 rowTwo-color">
+                  <h3 class="text-white-50 h5 mt-5" id="cityName">Cairo</h3>
+                  <div class="data">
+                      <span class="d-inline-block text-white biggerFont" id="cityTemp">36 </span>
+                      <span class="text-white biggerFont">&deg;C</span>
+                      <!-- <i class="fa-solid fa-moon text-white ms-5"></i> -->
+                      <img src="" id="imgOfweather" class="ms-5 pb-5" alt="">
+                  </div>
+                  <span class="text-info d-inline-block my-4" id="weatherText">clear</span>
+                  <div class="wheater-info text-white-50 mb-4">
+                    <span class="me-3">
+                      <i class="fa-solid fa-umbrella"></i>
+                      <span id="humidity">20%</span>
+                    </span>  
+                    <span class="me-3">
+                      <i class="fa-solid fa-wind"></i>
+                      <span id="wind">18Km/h</span>
+                    </span>  
+                    <span class="me-3">
+                      <i class="fa-solid fa-compass"></i>
+                      <span id="windDir">East</span>
+                    </span>  
+                  </div>
+                </div>
+  
+                <div class="col-md-4 rowTwo-secondColor text-center">
+                  <!-- <i class="fa-solid fa-sun fa-2x my-5 text-warning"></i> -->
+                  <img src="" class="nextImg my-5" alt="">
+                  <div>
+                    <span class="maxTemp text-white h3">39.6</span>
+                    <span class="text-white h3">&deg;C</span>
+                  </div>
+                  <div>
+                    <span class="minTemp text-white-50">26.7</span>
+                    <span class="text-white-50">&deg;</span>
+                  </div>
+                  <p class="nextTxt text-info mt-5">Sunny</p>
+                </div>
+
+
+                <div class="col-md-4 rowTwo-color text-center">
+                  <!-- <i class="fa-solid fa-sun fa-2x my-5 text-warning"></i> -->
+                  <img src="" class="nextImg my-5" alt="">
+                  <div>
+                    <span class="maxTemp text-white h3">39.6</span>
+                    <span class="text-white h3">&deg;C</span>
+                  </div>
+                  <div>
+                    <span class="minTemp text-white-50">26.7</span>
+                    <span class="text-white-50">&deg;</span>
+                  </div>
+                  <p class="nextTxt text-info mt-5">Sunny</p>
+                </div>
+  
+              </div>
+
+          </div>
+        </header>
+        <footer class="py-2">
+          <div class="container d-flex justify-content-between">
+            <div class="footer-form py-2 rounded-pill d-flex justify-content-between my-4">
+              <input type="text" class="ms-3" placeholder="Enter Your Email to subscribe...">
+              <button class="btn btn-info rounded-pill">Subscribe</button>
+            </div>
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="container">
+            <p class="text-white-50">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+        </footer>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/test.js"></script>
+</body>
+</html>

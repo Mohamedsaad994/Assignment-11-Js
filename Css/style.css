@@ -1,0 +1,111 @@
+:root{
+    --mainColor:#009ad8
+}
+ul{
+    list-style: none;
+}
+.rowOne-color{
+    background-color: #2d303d
+}
+.rowOne-secondColor{
+    background-color:#222531
+}
+.rowTwo-color{
+    background-color:#323544
+}
+.rowTwo-secondColor{
+    background-color:#262936
+}
+.biggerFont{
+    font-size:80px
+}
+.navbar-nav .nav-link.active{
+    color:var(--mainColor);
+    border:2px solid var(--mainColor);
+}
+.navbar-nav .nav-link.active:hover{
+    outline:none;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding:0 20px;
+    margin-left:10px;
+    border-radius:30px;
+    transition:0.4s;
+    outline:2px solid transparent;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:var(--mainColor);
+    outline-color:var(--mainColor);
+}
+
+header{
+    height:70vh;
+    background-image:url(../imgs/banner.png);
+    background-repeat: no-repeat;
+    background-color:#1e202b
+}
+header .form{
+    padding:10px
+}
+header .form input{
+    width:90%;
+    background-color: transparent;
+    border:none;
+}
+header .form input:focus{
+    outline:none
+}
+header .form button{
+    color:#fff;
+    padding: 8px 40px;
+}
+header .form button:hover{
+    color:#fff
+}
+header .item p{
+    width:fit-content;
+    display:inline-block
+}
+footer{
+    background-color: #262936;
+}
+footer .footer-form{
+    width:65%;
+    padding:10px;
+    background-color:#1e202b
+}
+footer .footer-form input{
+    width:90%;
+    background-color: transparent;
+    border:none;
+}
+footer .footer-form input:focus{
+    outline:none
+}
+footer .footer-form button{
+    color:#fff
+}
+footer .footer-form button:hover{
+    color:#fff
+}
+footer ul li{
+    width:40px;
+    height:40px;
+    margin-right:5px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transition:0.4s
+}
+footer ul li i{
+    color:var(--mainColor);
+    transition:0.4s
+}
+footer ul li:hover{
+    background-color: var(--mainColor);
+}
+footer ul li:hover i{
+    color:#fff
+}
